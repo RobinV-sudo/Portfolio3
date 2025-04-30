@@ -49,6 +49,15 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "simple_form"
+
+  gem "sassc-rails"
+
+  gem "bootstrap"
+
+  gem "font-awesome-sass"
+
 end
 
 group :development do
