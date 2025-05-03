@@ -1,0 +1,12 @@
+.container_portfolio {
+  max-width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .container_portfolio {
+    flex-direction: column !important; /* Stack items vertically */
+    align-items: stretch; /* Stretch items to full width */
+  }
+}

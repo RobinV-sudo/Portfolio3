@@ -1,0 +1,60 @@
+.slidshow_container {
+  position: relative;
+  background-image: linear-gradient(to right, $light-green, $light-blue);
+  height: 100%;
+  width: 91%;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: 17%;
+  flex-direction: column;
+  border: 2px solid $black;
+}
+
+@media screen and (max-width: 576px) {
+  .slidshow_container {
+    position: relative;
+    background-image: linear-gradient(to right, $light-blue, $light-green, $light-blue);
+    height: 100%;
+    width: 105%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 2px solid $black;
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slidshow_container {
+    position: relative;
+    background-image: linear-gradient(to right, $light-blue, $light-green, $light-blue);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: 0%;
+    margin-top: 3%;
+    flex-direction: column;
+    border: 2px solid $black;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slidshow_container {
+  position: relative;
+  background-image: linear-gradient(to right, $light-blue, $light-green, $light-blue);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: 0%;
+  margin-top: 3%;
+  flex-direction: column;
+  border: 2px solid $black;
+  }
+}
