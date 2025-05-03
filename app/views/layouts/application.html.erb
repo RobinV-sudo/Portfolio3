@@ -23,6 +23,63 @@
   </head>
 
   <body>
+    <%= cl_image_tag("background_test_y2ahgi", alt: "background", class: "background_container") %>
+    <div class='container_portfolio'>
+      <div class='row'>
+        <div class='col-lg-10 col-sm-10 col-xs-8 col'>
+          <div class='navbar'>
+            <ul class='navbar-2'>
+              <li><a class='navbar-item' href="/" >Home</a></li>
+              <li><a class='navbar-item' href="about" >About</a></li>
+              <li><a class='navbar-item' href="project" >Project</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class='col-lg-2 col-sm-2 col-xs-4 col'>
+          <div class="dropdown">
+            <button onclick="myFunction('myDropdown')" class="dropbtn">Contact List</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="https://www.linkedin.com/in/robinvorstedt/" alt="link to linkedin" target="_blank">
+                <%= cl_image_tag("Linkedin_logo_version_2_svcekn", alt: "icon linkedin", class: "icon_style") %>
+                Linkedin
+              </a>
+              <a href="https://github.com/RobinV-sudo/" alt="link to github" target="_blank">
+                <%= cl_image_tag("icon-github_ztzcuj", alt: "icon github", class: "icon_style") %>
+                Github
+              </a>
+              <a href="mailto:robinvorstedt@outlook.com" alt="link to e-mail" target="_blank">
+                <%= cl_image_tag("mail-icon-2_fw2t96", alt: "icon mail", class: "icon_style") %>
+                E-mail
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=31640229542" alt="link to whatsapp" target="_blank">
+                <%= cl_image_tag("Whatsapp_logo_version_2_agvr4g", alt: "icon whatsapp", class: "icon_style") %>
+                Whatsapp
+              </a>
+              <a href="https://pf.kakao.com/Vorstedt" alt="link to kakaotalk" target="_blank">
+                <%= cl_image_tag("kakaotalk-icon_wobug1", alt: "icon kakaotalk", class: "icon_style") %> <!-- Only available on mobile version? -->
+                KakaoTalk
+              </a>
+            </div>
+          </div>
+          <script>
+            function myFunction(dropdownId) {
+                document.getElementById(dropdownId).classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+          </script>
+        </div>
+      </div>
     <%= yield %>
   </body>
 </html>
