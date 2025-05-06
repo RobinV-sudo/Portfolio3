@@ -58,6 +58,8 @@ group :development, :test do
 
   gem "font-awesome-sass"
 
+  gem "cloudinary"
+
 end
 
 group :development do
